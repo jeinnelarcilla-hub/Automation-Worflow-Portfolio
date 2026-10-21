@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Jeinnel Arcilla | Workflow Automation Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            border: '#1F2937',
+                            blue: '#00F0FF',
+                            purple: '#7000FF',
+                            teal: '#00FFC2',
+                            pink: '#FF007A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    },
+                    animation: {
+                        'pulse-glow': 'pulseGlow 3s infinite ease-in-out',
+                        'flow-line': 'flowLine 2s linear infinite',
+                        'float': 'float 6s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '0.4', filter: 'drop-shadow(0 0 15px rgba(0,240,255,0.4))' },
+                            '50%': { opacity: '0.8', filter: 'drop-shadow(0 0 25px rgba(112,0,255,0.7))' }
+                        },
+                        flowLine: {
+                            '0%': { strokeDashoffset: '24' },
+                            '100%': { strokeDashoffset: '0' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Glassmorphism & Neon Glow Styles */
+        .glass-panel {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-panel-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-panel-hover:hover {
+            border-color: rgba(0, 240, 255, 0.4);
+            box-shadow: 0 0 25px -5px rgba(0, 240, 255, 0.15);
+            transform: translateY(-2px);
+        }
+        .neon-border-blue {
+            box-shadow: 0 0 15px -3px rgba(0, 240, 255, 0.3);
+        }
+        .neon-text-blue {
+            text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+        }
+        .neon-text-purple {
+            text-shadow: 0 0 10px rgba(112, 0, 255, 0.5);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0F19;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1F2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #374151;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-cyber-dark text-slate-200 font-sans antialiased min-h-screen selection:bg-cyber-blue selection:text-cyber-dark relative overflow-x-hidden">
+
+    <!-- Background Glow Orbs -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyber-purple/20 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-glow"></div>
+    <div class="fixed top-1/3 right-10 w-[30rem] h-[30rem] bg-cyber-blue/15 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-10 left-10 w-80 h-80 bg-cyber-teal/15 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+    
+    <!-- Background Grid overlay -->
+    <div class="fixed inset-0 bg-grid-pattern pointer-events-none -z-10 opacity-60"></div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-cyber-dark/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyber-blue via-cyber-purple to-cyber-teal p-[1px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-cyber-dark rounded-[11px] flex items-center justify-center">
+                        <span class="font-mono font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyber-blue to-cyber-teal text-lg">MA</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-bold text-slate-100 tracking-tight text-lg block leading-none">Maria Jeinnel Arcilla</span>
+                    <span class="text-xs font-mono text-cyber-teal font-medium">Automation & Systems Engineer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#simulator" class="hover:text-cyber-blue transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-cubes text-xs text-cyber-blue"></i> Interactive Sandbox
+                </a>
+                <a href="#workflows" class="hover:text-cyber-teal transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-diagram-project text-xs text-cyber-teal"></i> Workflows
+                </a>
+                <a href="#skills" class="hover:text-cyber-purple transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-microchip text-xs text-cyber-purple"></i> Tech Stack
+                </a>
+            </nav>
+
+            <!-- Availability & CTA -->
+            <div class="flex items-center gap-4">
+                <!-- Live UAE Clock Badge -->
+                <div class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full glass-panel border-slate-800 text-xs font-mono">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-slate-400">UAE (GST):</span>
+                    <span id="uaeClock" class="text-slate-200 font-semibold">00:00:00</span>
+                </div>
+
+                <button onclick="openContactModal()" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-medium text-slate-200 rounded-xl group bg-gradient-to-br from-cyber-blue via-cyber-purple to-cyber-teal group-hover:from-cyber-blue group-hover:to-cyber-teal hover:text-white shadow-lg shadow-cyber-blue/10 transition-all">
+                    <span class="relative px-4 py-2.5 transition-all ease-in duration-75 bg-cyber-dark rounded-[10px] group-hover:bg-opacity-0 font-semibold flex items-center gap-2">
+                        <i class="fa-paper-plane text-cyber-blue group-hover:text-white transition-colors"></i> Get In Touch
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-24 space-y-24">
+
+        <!-- HERO SECTION -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-6 lg:pt-12">
+            <div class="lg:col-span-7 space-y-6">
+                <!-- Status Tag -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel border border-cyber-blue/30 text-cyber-blue text-xs font-mono tracking-wide">
+                    <i class="fa-solid fa-bolt animate-pulse"></i> ELECTRONICS ENGINEER & AUTOMATION SPECIALIST
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-100 tracking-tight leading-[1.15]">
+                    Architecting <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-blue via-cyber-teal to-cyber-purple">Zero-Touch</span> Digital Workflows
+                </h1>
+
+                <!-- Subtext -->
+                <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    Streamlining enterprise operations, digital documentation, and multi-app integrations through robust <span class="text-slate-200 font-medium">Make.com</span> scenarios and <span class="text-slate-200 font-medium">Microsoft Power Automate</span> cloud flows. Bridges hardware-level engineering precision with enterprise automation.
+                </p>
+
+                <!-- Quick Stats Badges -->
+                <div class="grid grid-cols-3 gap-3 pt-2 max-w-xl">
+                    <div class="glass-panel p-3.5 rounded-2xl border-slate-800/80 text-center hover:border-cyber-blue/40 transition-colors">
+                        <div class="text-2xl sm:text-3xl font-extrabold font-mono text-cyber-blue">50+</div>
+                        <div class="text-[11px] sm:text-xs text-slate-400 font-medium mt-0.5">Workflows Built</div>
+                    </div>
+                    <div class="glass-panel p-3.5 rounded-2xl border-slate-800/80 text-center hover:border-cyber-teal/40 transition-colors">
+                        <div class="text-2xl sm:text-3xl font-extrabold font-mono text-cyber-teal">100%</div>
+                        <div class="text-[11px] sm:text-xs text-slate-400 font-medium mt-0.5">Zero-Touch Pipelines</div>
+                    </div>
+                    <div class="glass-panel p-3.5 rounded-2xl border-slate-800/80 text-center hover:border-cyber-purple/40 transition-colors">
+                        <div class="text-2xl sm:text-3xl font-extrabold font-mono text-cyber-purple">99.9%</div>
+                        <div class="text-[11px] sm:text-xs text-slate-400 font-medium mt-0.5">Systems Uptime</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#simulator" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyber-blue to-blue-600 text-cyber-dark font-bold text-sm hover:shadow-lg hover:shadow-cyber-blue/25 transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-play text-xs"></i> Try Live Sandbox
+                    </a>
+                    <a href="#workflows" class="px-6 py-3.5 rounded-xl glass-panel hover:bg-slate-800/80 text-slate-200 font-semibold text-sm border-slate-700/60 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-folder-open text-cyber-teal"></i> Explore Case Studies
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Visual Graphic / Node Flow Animation -->
+            <div class="lg:col-span-5 relative">
+                <div class="glass-panel p-6 rounded-3xl border-slate-800 relative overflow-hidden shadow-2xl bg-cyber-card/60">
+                    <!-- Terminal / Automation Visualizer Banner -->
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                            <span class="text-xs font-mono text-slate-400 ml-2">enterprise-orchestrator.json</span>
+                        </div>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">LIVE MONITOR</span>
+                    </div>
+
+                    <!-- Flow Diagram Animation SVG -->
+                    <div class="relative py-4 space-y-6">
+                        <!-- Node 1: Webhook -->
+                        <div class="flex items-center gap-4 bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800 hover:border-cyber-blue/50 transition-all group">
+                            <div class="w-10 h-10 rounded-xl bg-cyber-blue/10 border border-cyber-blue/30 flex items-center justify-center text-cyber-blue group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-bolt text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="text-xs font-mono text-slate-400">TRIGGER • WEBHOOK</div>
+                                <div class="text-sm font-bold text-slate-200">Incoming Document / Data</div>
+                            </div>
+                            <span class="text-xs font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/50 px-2 py-1 rounded">200 OK</span>
+                        </div>
+
+                        <!-- Animated Connecting Line -->
+                        <div class="flex justify-center -my-3">
+                            <div class="w-0.5 h-8 bg-gradient-to-b from-cyber-blue via-cyber-purple to-cyber-teal animate-pulse"></div>
+                        </div>
+
+                        <!-- Node 2: Transformation Engine -->
+                        <div class="flex items-center gap-4 bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800 hover:border-cyber-purple/50 transition-all group">
+                            <div class="w-10 h-10 rounded-xl bg-cyber-purple/10 border border-cyber-purple/30 flex items-center justify-center text-cyber-purple group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-code-branch text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="text-xs font-mono text-slate-400">TRANSFORM • MAKE / POWER AUTOMATE</div>
+                                <div class="text-sm font-bold text-slate-200">Parse Metadata & Validations</div>
+                            </div>
+                            <span class="text-[10px] font-mono text-cyber-purple bg-cyber-purple/10 border border-cyber-purple/30 px-2 py-1 rounded">12ms</span>
+                        </div>
+
+                        <!-- Animated Connecting Line -->
+                        <div class="flex justify-center -my-3">
+                            <div class="w-0.5 h-8 bg-gradient-to-b from-cyber-purple via-cyber-teal to-emerald-400 animate-pulse"></div>
+                        </div>
+
+                        <!-- Node 3: Sync & Alert Dispatch -->
+                        <div class="flex items-center gap-4 bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800 hover:border-cyber-teal/50 transition-all group">
+                            <div class="w-10 h-10 rounded-xl bg-cyber-teal/10 border border-cyber-teal/30 flex items-center justify-center text-cyber-teal group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-cloud-arrow-up text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="text-xs font-mono text-slate-400">DESTINATION • ERP / TEAMS / M365</div>
+                                <div class="text-sm font-bold text-slate-200">Auto Sync & Stakeholder Alert</div>
+                            </div>
+                            <span class="text-xs font-mono text-cyber-teal bg-cyber-teal/10 border border-cyber-teal/30 px-2 py-1 rounded">Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400 font-mono">
+                        <span>Status: <span class="text-emerald-400">Active Pipeline</span></span>
+                        <span>Avg Speed: <span class="text-slate-200">0.8s</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE WORKFLOW BUILDER / SANDBOX TOOL -->
+        <section id="simulator" class="scroll-mt-24">
+            <div class="glass-panel rounded-3xl p-6 sm:p-8 border-slate-800 relative overflow-hidden bg-gradient-to-b from-slate-900/90 to-cyber-dark">
+                <!-- Section Header -->
+                <div class="max-w-3xl space-y-2 mb-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyber-blue/10 border border-cyber-blue/30 text-cyber-blue text-xs font-mono">
+                        <i class="fa-solid fa-sliders"></i> INTERACTIVE SANDBOX
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-100">Try My Workflow Engine</h2>
+                    <p class="text-slate-400 text-sm">Select a Trigger, pick a Transformation/Condition, and choose an Action destination. Run the scenario to test live execution steps and log output.</p>
+                </div>
+
+                <!-- Sandbox Grid Controls -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <!-- Step 1: Trigger -->
+                    <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-800 space-y-3">
+                        <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+                            <span class="text-cyber-blue font-bold">01. TRIGGER</span>
+                            <i class="fa-solid fa-bolt text-cyber-blue"></i>
+                        </div>
+                        <label class="block text-xs text-slate-300 font-medium">Select Starting Event:</label>
+                        <select id="simTrigger" class="w-full bg-slate-800 border border-slate-700 text-slate-200 text-sm rounded-xl p-3 focus:outline-none focus:border-cyber-blue font-sans">
+                            <option value="excel_row">OneDrive Excel / Row Added or Updated</option>
+                            <option value="webhook_lead">Custom Webhook Received (Lead Form)</option>
+                            <option value="sharepoint_doc">SharePoint Document Uploaded</option>
+                            <option value="aconex_mail">Aconex Mail / Transmittal Created</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 2: Logic / Transformation -->
+                    <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-800 space-y-3">
+                        <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+                            <span class="text-cyber-purple font-bold">02. LOGIC / FILTER</span>
+                            <i class="fa-solid fa-code-branch text-cyber-purple"></i>
+                        </div>
+                        <label class="block text-xs text-slate-300 font-medium">Select Business Logic:</label>
+                        <select id="simLogic" class="w-full bg-slate-800 border border-slate-700 text-slate-200 text-sm rounded-xl p-3 focus:outline-none focus:border-cyber-purple font-sans">
+                            <option value="calc_expiry">Calculate Days Remaining & Filter Status</option>
+                            <option value="parse_json">Extract Metadata & Validate Form Fields</option>
+                            <option value="qa_inspection">Verify QA/QC Sign-off & Attach PDF</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 3: Action -->
+                    <div class="bg-slate-900/90 rounded-2xl p-5 border border-slate-800 space-y-3">
+                        <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+                            <span class="text-cyber-teal font-bold">03. ACTION</span>
+                            <i class="fa-solid fa-paper-plane text-cyber-teal"></i>
+                        </div>
+                        <label class="block text-xs text-slate-300 font-medium">Select Target Destination:</label>
+                        <select id="simAction" class="w-full bg-slate-800 border border-slate-700 text-slate-200 text-sm rounded-xl p-3 focus:outline-none focus:border-cyber-teal font-sans">
+                            <option value="outlook_teams">Dispatch Outlook Email & Teams Alert</option>
+                            <option value="crm_slack">Update CRM Record & Notify Agent on Slack</option>
+                            <option value="drive_archive">Archive to Cloud Directory with Audit Log</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Run Scenario Control Bar -->
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-slate-900/90 p-4 rounded-2xl border border-slate-800 mb-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></div>
+                        <span class="text-xs font-mono text-slate-300">Sandbox Engine Ready • Make.com / Power Automate Simulator</span>
+                    </div>
+                    <button onclick="runSimulation()" id="runSimBtn" class="w-full sm:w-auto px-8 py-3 rounded-xl bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-teal text-slate-950 font-bold text-sm hover:shadow-lg hover:shadow-cyber-blue/30 transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-play"></i> Run Automation Flow
+                    </button>
+                </div>
+
+                <!-- Live Pipeline Visual Execution Display -->
+                <div id="simLogContainer" class="bg-black/80 rounded-2xl p-5 border border-slate-800 font-mono text-xs space-y-3 min-h-[200px] overflow-x-auto">
+                    <div class="text-slate-500">// Execution log initialized. Click "Run Automation Flow" above to simulate data processing.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKFLOW CASE STUDIES SECTION -->
+        <section id="workflows" class="scroll-mt-24 space-y-8">
+            <!-- Section Title & Category Filter Tabs -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-2 max-w-xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyber-teal/10 border border-cyber-teal/30 text-cyber-teal text-xs font-mono">
+                        <i class="fa-solid fa-diagram-project"></i> PRODUCTION WORKFLOWS
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-slate-100 tracking-tight">Featured Case Studies</h2>
+                    <p class="text-slate-400 text-sm">Real-world enterprise scenarios designed to automate manual labor, enforce data integrity, and accelerate operational turnarounds.</p>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="flex flex-wrap gap-2 p-1.5 glass-panel rounded-2xl border-slate-800 self-start">
+                    <button onclick="filterWorkflows('all')" class="wf-tab px-4 py-2 rounded-xl text-xs font-medium transition-all bg-cyber-blue text-cyber-dark font-bold" data-filter="all">All Workflows</button>
+                    <button onclick="filterWorkflows('make')" class="wf-tab px-4 py-2 rounded-xl text-xs font-medium text-slate-400 hover:text-slate-200 transition-all" data-filter="make">Make.com</button>
+                    <button onclick="filterWorkflows('powerautomate')" class="wf-tab px-4 py-2 rounded-xl text-xs font-medium text-slate-400 hover:text-slate-200 transition-all" data-filter="powerautomate">Power Automate</button>
+                    <button onclick="filterWorkflows('hybrid')" class="wf-tab px-4 py-2 rounded-xl text-xs font-medium text-slate-400 hover:text-slate-200 transition-all" data-filter="hybrid">Hybrid / Multi-Tool</button>
+                </div>
+            </div>
+
+            <!-- Workflow Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="workflowGrid">
+
+                <!-- CARD 1: Contract Expiration Engine -->
+                <div class="wf-card glass-panel glass-panel-hover rounded-3xl p-6 border-slate-800/90 flex flex-col justify-between space-y-6" data-category="make">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/30 text-xs font-mono font-medium flex items-center gap-1.5">
+                                <i class="fa-solid fa-infinity"></i> Make.com
+                            </span>
+                            <span class="text-xs text-slate-500 font-mono">Scheduled • Daily 08:00 GST</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-100 group-hover:text-cyber-blue transition-colors">
+                            Contract Expiration & Auto-Alert Engine
+                        </h3>
+
+                        <div class="space-y-3 text-xs leading-relaxed">
+                            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800/80">
+                                <span class="font-semibold text-rose-400 block mb-1">
+                                    <i class="fa-solid fa-triangle-exclamation mr-1"></i> Problem:
+                                </span>
+                                <p class="text-slate-400">Manual tracking of vendor & client contract dates led to missed renewal windows and non-compliance risks.</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800/80">
+                                <span class="font-semibold text-emerald-400 block mb-1">
+                                    <i class="fa-solid fa-circle-check mr-1"></i> Solution:
+                                </span>
+                                <p class="text-slate-400">Scheduled Make.com scenario scans OneDrive Excel sheets, calculates days remaining, and dispatches dynamic Outlook notifications with conditional urgency tags.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tool Tags -->
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Make.com</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">OneDrive Excel</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">MS Outlook</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">HTML Email Templates</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Trigger Button -->
+                    <button onclick="openModal('modalContract')" class="w-full py-3 rounded-xl bg-slate-800/90 hover:bg-cyber-purple/20 hover:border-cyber-purple/50 border border-slate-700/80 text-slate-200 text-xs font-semibold transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-network-wired text-cyber-purple"></i> View Flow Diagram & Simulated Log
+                    </button>
+                </div>
+
+                <!-- CARD 2: Supply Chain & Inspection Log Sync -->
+                <div class="wf-card glass-panel glass-panel-hover rounded-3xl p-6 border-slate-800/90 flex flex-col justify-between space-y-6" data-category="powerautomate">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/30 text-xs font-mono font-medium flex items-center gap-1.5">
+                                <i class="fa-solid fa-bolt text-blue-400"></i> Power Automate
+                            </span>
+                            <span class="text-xs text-slate-500 font-mono">Automated Cloud Flow</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-100">
+                            Supply Chain & TPI Inspection Log Sync
+                        </h3>
+
+                        <div class="space-y-3 text-xs leading-relaxed">
+                            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800/80">
+                                <span class="font-semibold text-rose-400 block mb-1">
+                                    <i class="fa-solid fa-triangle-exclamation mr-1"></i> Problem:
+                                </span>
+                                <p class="text-slate-400">Delayed updates for Third-Party Inspection (TPI) sign-offs caused bottlenecks in material dispatches and site deliveries.</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800/80">
+                                <span class="font-semibold text-emerald-400 block mb-1">
+                                    <i class="fa-solid fa-circle-check mr-1"></i> Solution:
+                                </span>
+                                <p class="text-slate-400">Power Automate flow parses QA/QC inspection sign-offs, updates SharePoint lists in real-time, and broadcasts Adaptive Cards to Microsoft Teams channels.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tool Tags -->
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Power Automate</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">SharePoint Online</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">MS Teams</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Adaptive Cards</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Trigger Button -->
+                    <button onclick="openModal('modalInspection')" class="w-full py-3 rounded-xl bg-slate-800/90 hover:bg-cyber-blue/20 hover:border-cyber-blue/50 border border-slate-700/80 text-slate-200 text-xs font-semibold transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-vial text-cyber-blue"></i> Test Simulated TPI Sign-Off Demo
+                    </button>
+                </div>
+
+                <!-- CARD 3: Digital Marketing & Lead Routing -->
+                <div class="wf-card glass-panel glass-panel-hover rounded-3xl p-6 border-slate-800/90 flex flex-col justify-between space-y-6" data-category="make">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/30 text-xs font-mono font-medium flex items-center gap-1.5">
+                                <i class="fa-solid fa-infinity"></i> Make.com
+                            </span>
+                            <span class="text-xs text-slate-500 font-mono">Instant Webhook</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-100">
+                            Digital Marketing & Lead Routing Automation
+                        </h3>
+
+                        <div class="space-y-3 text-xs leading-relaxed">
+                            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800/80">
+                                <span class="font-semibold text-rose-400 block mb-1">
+                                    <i class="fa-solid fa-triangle-exclamation mr-1"></i> Problem:
+                                </span>
+                                <p class="text-slate-400">Slow response times to incoming service inquiries across web forms and channels caused dropped conversion rates.</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800/80">
+                                <span class="font-semibold text-emerald-400 block mb-1">
+                                    <i class="fa-solid fa-circle-check mr-1"></i> Solution:
+                                </span>
+                                <p class="text-slate-400">Real-time webhook listener captures leads, enriches data, pushes to CRM, alerts agents on Slack, and sends dynamic personalized email replies.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tool Tags -->
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Make.com</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Webhooks</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">HubSpot CRM</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Slack API</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Trigger Button -->
+                    <button onclick="openModal('modalLead')" class="w-full py-3 rounded-xl bg-slate-800/90 hover:bg-cyber-teal/20 hover:border-cyber-teal/50 border border-slate-700/80 text-slate-200 text-xs font-semibold transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-cyber-teal"></i> Test Lead Capture Simulator
+                    </button>
+                </div>
+
+                <!-- CARD 4: Document Attestation & Permit Tracking Pipeline -->
+                <div class="wf-card glass-panel glass-panel-hover rounded-3xl p-6 border-slate-800/90 flex flex-col justify-between space-y-6" data-category="hybrid">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/30 text-xs font-mono font-medium flex items-center gap-1.5">
+                                <i class="fa-solid fa-diagram-next"></i> Hybrid / Multi-Tool
+                            </span>
+                            <span class="text-xs text-slate-500 font-mono">Power Automate + Drive / Aconex</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-100">
+                            Document Attestation & Permit Tracking Pipeline
+                        </h3>
+
+                        <div class="space-y-3 text-xs leading-relaxed">
+                            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800/80">
+                                <span class="font-semibold text-rose-400 block mb-1">
+                                    <i class="fa-solid fa-triangle-exclamation mr-1"></i> Problem:
+                                </span>
+                                <p class="text-slate-400">Fragmented tracking of government, authority approvals, and civil engineering permits across disconnected folders.</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800/80">
+                                <span class="font-semibold text-emerald-400 block mb-1">
+                                    <i class="fa-solid fa-circle-check mr-1"></i> Solution:
+                                </span>
+                                <p class="text-slate-400">Standardizes file nomenclature, extracts document metadata via regex pattern matching, archives to structured cloud repositories, and logs full audit trails.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tool Tags -->
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Power Automate</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Aconex Document Control</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Google Drive / OneDrive</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-[11px] font-mono">Regex Engine</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Trigger Button -->
+                    <button onclick="openModal('modalPermit')" class="w-full py-3 rounded-xl bg-slate-800/90 hover:bg-cyber-blue/20 hover:border-cyber-blue/50 border border-slate-700/80 text-slate-200 text-xs font-semibold transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-file-shield text-cyber-blue"></i> View File Naming & Attestation Flow
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS & TECH STACK BADGES SECTION -->
+        <section id="skills" class="scroll-mt-24 space-y-8">
+            <div class="space-y-2 text-center max-w-2xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyber-purple/10 border border-cyber-purple/30 text-cyber-purple text-xs font-mono">
+                    <i class="fa-solid fa-microchip"></i> TECHNICAL COMPETENCIES
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-100 tracking-tight">Automation Tech Stack & Background</h2>
+                <p class="text-slate-400 text-sm">Combining PRC Electronics Engineering expertise with modern cloud-native automation engines and data systems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Automation Tools -->
+                <div class="glass-panel rounded-3xl p-6 border-slate-800 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyber-purple/20 flex items-center justify-center text-cyber-purple">
+                            <i class="fa-solid fa-gears text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Automation Platforms</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 text-xs">
+                            <span class="font-semibold text-slate-200">Make.com (Integromat)</span>
+                            <span class="text-cyber-purple font-mono">Expert</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 text-xs">
+                            <span class="font-semibold text-slate-200">MS Power Automate</span>
+                            <span class="text-cyber-blue font-mono">Expert</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 text-xs">
+                            <span class="font-semibold text-slate-200">n8n / Zapier</span>
+                            <span class="text-cyber-teal font-mono">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 text-xs">
+                            <span class="font-semibold text-slate-200">Webhooks & REST APIs</span>
+                            <span class="text-emerald-400 font-mono">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ecosystem & Integration Tools -->
+                <div class="glass-panel rounded-3xl p-6 border-slate-800 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyber-blue/20 flex items-center justify-center text-cyber-blue">
+                            <i class="fa-solid fa-cloud text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Ecosystem & Data</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 text-xs">
+                            <span class="font-semibold text-slate-200">Microsoft 365 / SharePoint</span>
+                            <span class="text-cyber-blue font-mono">Native</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 text-xs">
+                            <span class="font-semibold text-slate-200">Aconex / Google Drive</span>
+                            <span class="text-cyber-purple font-mono">Native</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 text-xs">
+                            <span class="font-semibold text-slate-200">Power BI & SQL</span>
+                            <span class="text-cyber-teal font-mono">Proficient</span>
+                        </div>
+                        <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/80 text-xs">
+                            <span class="font-semibold text-slate-200">Excel / JSON Data Structures</span>
+                            <span class="text-emerald-400 font-mono">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering & Domain Highlights -->
+                <div class="glass-panel rounded-3xl p-6 border-slate-800 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyber-teal/20 flex items-center justify-center text-cyber-teal">
+                            <i class="fa-solid fa-microchip text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Engineering Highlights</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="p-2.5 rounded-xl bg-slate-900/80 text-xs space-y-1">
+                            <span class="font-bold text-cyber-teal block">PRC Registered Electronics Engineer</span>
+                            <span class="text-slate-400">Licensed background bringing circuit & logic-level precision to software automation.</span>
+                        </div>
+                        <div class="p-2.5 rounded-xl bg-slate-900/80 text-xs space-y-1">
+                            <span class="font-bold text-slate-200 block">CAD / GIS Drafting & Systems Integration</span>
+                            <span class="text-slate-400">Adept at bridging technical documentation, geospatial logs, and administrative ERPs.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="border-t border-slate-800/80 bg-cyber-dark/90 py-12 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="space-y-2 text-center md:text-left">
+                <div class="font-bold text-slate-100 text-lg">Maria Jeinnel Arcilla</div>
+                <p class="text-xs text-slate-400">Electronics Engineer & Enterprise Automation Specialist • UAE</p>
+            </div>
+
+            <!-- UAE Time Badge Footer -->
+            <div class="flex items-center gap-2 px-4 py-2 rounded-xl glass-panel border-slate-800 text-xs font-mono">
+                <i class="fa-solid fa-clock text-cyber-teal"></i>
+                <span class="text-slate-400">GST (GMT+4) Working Hours:</span>
+                <span class="text-emerald-400 font-semibold">Available</span>
+            </div>
+
+            <div class="flex items-center gap-4 text-slate-400 text-sm">
+                <button onclick="openContactModal()" class="hover:text-cyber-blue transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope"></i> Contact
+                </button>
+                <span>•</span>
+                <span class="text-xs text-slate-500">© 2026 Maria Jeinnel Arcilla</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL 1: CONTRACT EXPIRATION ENGINE DRAWER -->
+    <div id="modalContract" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="glass-panel w-full max-w-2xl rounded-3xl p-6 border-slate-800 space-y-6 max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-cyber-purple/20 flex items-center justify-center text-cyber-purple">
+                        <i class="fa-solid fa-infinity text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-100">Contract Expiration & Auto-Alert Engine</h3>
+                        <span class="text-xs font-mono text-purple-400">Make.com Scenario Blueprint</span>
+                    </div>
+                </div>
+                <button onclick="closeModal('modalContract')" class="text-slate-400 hover:text-white p-2 rounded-lg">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Step by Step Node Breakdown -->
+            <div class="space-y-3 text-xs font-mono">
+                <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
+                    <span class="w-6 h-6 rounded-full bg-cyber-blue/20 text-cyber-blue flex items-center justify-center font-bold">1</span>
+                    <div>
+                        <div class="text-slate-200 font-bold">OneDrive Excel Node: Watch Rows</div>
+                        <div class="text-slate-500">Polls 'Contracts_Master.xlsx' every 24 hours at 08:00 GST</div>
+                    </div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
+                    <span class="w-6 h-6 rounded-full bg-cyber-purple/20 text-cyber-purple flex items-center justify-center font-bold">2</span>
+                    <div>
+                        <div class="text-slate-200 font-bold">Data Transformer: Date Differencing</div>
+                        <div class="text-slate-500">Calculates `days_remaining = parseDate(Expiration_Date) - now`</div>
+                    </div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
+                    <span class="w-6 h-6 rounded-full bg-cyber-teal/20 text-cyber-teal flex items-center justify-center font-bold">3</span>
+                    <div>
+                        <div class="text-slate-200 font-bold">Branching Router: Alert Thresholds</div>
+                        <div class="text-slate-500">Route A: &lt; 30 Days (Urgent Alert) | Route B: &lt; 60 Days (Warning)</div>
+                    </div>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
+                    <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">4</span>
+                    <div>
+                        <div class="text-slate-200 font-bold">MS Outlook Module: Dispatches Email</div>
+                        <div class="text-slate-500">Sends formatted HTML email with direct renewal link & status tag</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-black/80 rounded-2xl p-4 font-mono text-[11px] text-emerald-400 border border-slate-800 space-y-1">
+                <div class="text-slate-500">// Simulated Execution Log Output</div>
+                <div>[08:00:01] Scenario triggered via CRON scheduler</div>
+                <div>[08:00:02] Parsed 142 records from OneDrive Sheet</div>
+                <div>[08:00:02] Identified 3 contracts expiring within 30 days: [ID: #8841, #9021, #9104]</div>
+                <div>[08:00:03] Dispatched 3 Outlook HTML alerts -> Procurement Dept</div>
+                <div>[08:00:03] Execution finished. Status: SUCCESS (0 errors)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: TPI INSPECTION SIGN-OFF DEMO -->
+    <div id="modalInspection" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="glass-panel w-full max-w-2xl rounded-3xl p-6 border-slate-800 space-y-6 max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-cyber-blue/20 flex items-center justify-center text-cyber-blue">
+                        <i class="fa-solid fa-bolt text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-100">Live Inspection Sign-Off Demo</h3>
+                        <span class="text-xs font-mono text-blue-400">Power Automate + SharePoint + Teams</span>
+                    </div>
+                </div>
+                <button onclick="closeModal('modalInspection')" class="text-slate-400 hover:text-white p-2 rounded-lg">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-slate-900/90 rounded-2xl p-4 border border-slate-800 space-y-3">
+                    <label class="text-xs text-slate-300 font-medium block">Simulate QA/QC Inspector Sign-off Submission:</label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <input type="text" id="tpiReportId" value="TPI-2026-8802" class="bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-xs text-slate-200" readonly>
+                        <select id="tpiStatus" class="bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-xs text-slate-200">
+                            <option value="APPROVED">Status: APPROVED (Pass)</option>
+                            <option value="REJECTED">Status: REJECTED (Fail)</option>
+                        </select>
+                    </div>
+                    <button onclick="triggerTpiDemo()" class="w-full py-2.5 rounded-xl bg-cyber-blue text-cyber-dark font-bold text-xs hover:shadow-lg hover:shadow-cyber-blue/20 transition-all">
+                        Simulate Form Submission
+                    </button>
+                </div>
+
+                <div id="tpiOutput" class="hidden space-y-3">
+                    <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-800/50 text-emerald-400 text-xs font-mono flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check"></i> Power Automate Cloud Flow Triggered!
+                    </div>
+
+                    <!-- Teams Adaptive Card Preview -->
+                    <div class="bg-slate-900 p-4 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="flex items-center gap-2 text-xs text-slate-400">
+                            <i class="fa-brands fa-microsoft-teams text-indigo-400"></i>
+                            <span class="font-bold text-slate-200">Microsoft Teams Channel Notification Card:</span>
+                        </div>
+                        <div class="bg-slate-800/90 p-3 rounded-xl border border-indigo-500/30 text-xs space-y-2">
+                            <div class="font-bold text-slate-100 flex items-center justify-between">
+                                <span>QA/QC Inspection Updated: TPI-2026-8802</span>
+                                <span id="cardStatusBadge" class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">APPROVED</span>
+                            </div>
+                            <p class="text-slate-400 text-[11px]">Material Batch #9921 has been marked as verified by Third-Party Inspector. SharePoint List record synchronized successfully.</p>
+                            <div class="pt-2 flex gap-2">
+                                <span class="px-3 py-1 bg-indigo-600 text-white rounded text-[10px] font-bold">Open SharePoint Record</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: LEAD ROUTING SIMULATOR -->
+    <div id="modalLead" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="glass-panel w-full max-w-2xl rounded-3xl p-6 border-slate-800 space-y-6 max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-cyber-teal/20 flex items-center justify-center text-cyber-teal">
+                        <i class="fa-solid fa-paper-plane text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-100">Lead Capture & Dynamic Routing</h3>
+                        <span class="text-xs font-mono text-teal-400">Make.com Webhook Scenario</span>
+                    </div>
+                </div>
+                <button onclick="closeModal('modalLead')" class="text-slate-400 hover:text-white p-2 rounded-lg">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-slate-900/90 rounded-2xl p-4 border border-slate-800 space-y-3">
+                    <label class="text-xs text-slate-300 font-medium block">Test Lead Ingestion Payload:</label>
+                    <div class="space-y-2">
+                        <input type="text" id="leadName" value="John Doe (Apex Logistics)" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-xs text-slate-200">
+                        <input type="email" id="leadEmail" value="j.doe@apexlogistics.ae" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-xs text-slate-200">
+                    </div>
+                    <button onclick="triggerLeadDemo()" class="w-full py-2.5 rounded-xl bg-cyber-teal text-cyber-dark font-bold text-xs hover:shadow-lg hover:shadow-cyber-teal/20 transition-all">
+                        Post Webhook Payload
+                    </button>
+                </div>
+
+                <div id="leadOutput" class="hidden bg-black/80 rounded-2xl p-4 font-mono text-[11px] text-cyber-teal border border-slate-800 space-y-1">
+                    <div class="text-slate-500">// Make.com Webhook Processing Stream</div>
+                    <div>[0.00s] HTTP POST 200 Received at /hook/90412a</div>
+                    <div>[0.12s] HubSpot CRM: Contact created for 'John Doe'</div>
+                    <div>[0.25s] Slack API: Posted alert to #sales-inquiries channel</div>
+                    <div>[0.40s] Dynamic Auto-responder dispatched to j.doe@apexlogistics.ae</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 4: DOCUMENT ATTESTATION & PERMIT TRACKING -->
+    <div id="modalPermit" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="glass-panel w-full max-w-2xl rounded-3xl p-6 border-slate-800 space-y-6 max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-cyber-purple/20 flex items-center justify-center text-cyber-purple">
+                        <i class="fa-solid fa-file-shield text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-100">Document Attestation & Naming Pipeline</h3>
+                        <span class="text-xs font-mono text-purple-400">Power Automate + Aconex / Drive</span>
+                    </div>
+                </div>
+                <button onclick="closeModal('modalPermit')" class="text-slate-400 hover:text-white p-2 rounded-lg">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="space-y-4">
+                <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 space-y-3">
+                    <div class="text-xs font-bold text-slate-200">Automated Nomenclature Standardizer Rule:</div>
+                    <div class="p-3 bg-black rounded-xl font-mono text-xs text-cyber-blue border border-slate-800">
+                        Input: <span class="text-slate-400">"permit_final_signed_v2 (1).pdf"</span><br>
+                        Regex Rules: Extraction of [ProjectCode], [DocType], [DateStamp]<br>
+                        Output: <span class="text-emerald-400">"DXB-CIVIL-PRM-20261021-APPROVED.pdf"</span>
+                    </div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-900 border border-slate-800 space-y-2 text-xs text-slate-300">
+                    <div class="font-bold text-slate-100">Workflow Execution Highlights:</div>
+                    <ul class="list-disc pl-5 space-y-1 text-slate-400">
+                        <li>Automated OCR metadata extraction from government NOC stamps</li>
+                        <li>Syncs approved permits to Aconex transmittals and cloud backup</li>
+                        <li>Generates immutable Excel audit trail with time-stamped signatures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT MODAL -->
+    <div id="modalContact" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="glass-panel w-full max-w-lg rounded-3xl p-6 border-slate-800 space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyber-blue to-cyber-teal flex items-center justify-center text-cyber-dark font-bold">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-100">Get In Touch</h3>
+                        <span class="text-xs text-slate-400">Maria Jeinnel Arcilla • Automation Specialist</span>
+                    </div>
+                </div>
+                <button onclick="closeModal('modalContact')" class="text-slate-400 hover:text-white p-2 rounded-lg">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">Your Name</label>
+                    <input type="text" required class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-xs text-slate-200 focus:outline-none focus:border-cyber-blue" placeholder="e.g., Alex Mercer">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">Email Address</label>
+                    <input type="email" required class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-xs text-slate-200 focus:outline-none focus:border-cyber-blue" placeholder="alex@company.com">
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-slate-300 mb-1">Automation Request / Inquiry</label>
+                    <textarea rows="3" required class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-xs text-slate-200 focus:outline-none focus:border-cyber-blue" placeholder="Tell me about the workflow or system you need automated..."></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-teal text-cyber-dark font-bold text-xs hover:shadow-lg hover:shadow-cyber-blue/20 transition-all">
+                    Dispatch Message
+                </button>
+            </form>
+
+            <div id="contactSuccess" class="hidden p-3 rounded-xl bg-emerald-950/50 border border-emerald-800 text-emerald-400 text-xs text-center font-mono">
+                ✓ Message received! Simulation log dispatched to Maria's queue.
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT INTERACTION LOGIC -->
+    <script>
+        // Real-time UAE (GST - GMT+4) Clock Update
+        function updateUAEClock() {
+            const options = {
+                timeZone: 'Asia/Dubai',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+            const formatter = new Intl.DateTimeFormat([], options);
+            const clockEl = document.getElementById('uaeClock');
+            if (clockEl) {
+                clockEl.textContent = formatter.format(new Date());
+            }
+        }
+        setInterval(updateUAEClock, 1000);
+        updateUAEClock();
+
+        // Modal Handlers
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function openContactModal() {
+            openModal('modalContact');
+        }
+
+        // Contact Form Handler
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const success = document.getElementById('contactSuccess');
+            if (success) {
+                success.classList.remove('hidden');
+                setTimeout(() => {
+                    closeModal('modalContact');
+                    success.classList.add('hidden');
+                }, 2000);
+            }
+        }
+
+        // Workflow Portfolio Filter Tabs
+        function filterWorkflows(category) {
+            const cards = document.querySelectorAll('.wf-card');
+            const buttons = document.querySelectorAll('.wf-tab');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.className = 'wf-tab px-4 py-2 rounded-xl text-xs font-bold transition-all bg-cyber-blue text-cyber-dark';
+                } else {
+                    btn.className = 'wf-tab px-4 py-2 rounded-xl text-xs font-medium text-slate-400 hover:text-slate-200 transition-all';
+                }
+            });
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Sandbox Simulator Execution Logic
+        function runSimulation() {
+            const trigger = document.getElementById('simTrigger').value;
+            const logic = document.getElementById('simLogic').value;
+            const action = document.getElementById('simAction').value;
+            const container = document.getElementById('simLogContainer');
+            const btn = document.getElementById('runSimBtn');
+
+            btn.disabled = true;
+            btn.classList.add('opacity-50');
+            container.innerHTML = '<div class="text-cyber-blue font-bold animate-pulse">// INITIALIZING SCENARIO RUNNER...</div>';
+
+            const logs = [
+                `[${new Date().toLocaleTimeString()}] ▶ TRIGGER: Ingested payload from selected source (${trigger})`,
+                `[${new Date().toLocaleTimeString()}] ⚙ PROCESS: Applied logic transformer (${logic})`,
+                `[${new Date().toLocaleTimeString()}] ⇄ API HTTP: 200 OK - Target endpoint reachable`,
+                `[${new Date().toLocaleTimeString()}] ✔ ACTION: Executed destination flow (${action})`,
+                `[${new Date().toLocaleTimeString()}] ★ SUCCESS: Scenario completed in 0.42s (0 errors, 12kb payload processed)`
+            ];
+
+            let index = 0;
+            const interval = setInterval(() => {
+                if (index < logs.length) {
+                    const logLine = document.createElement('div');
+                    logLine.className = index === logs.length - 1 ? 'text-emerald-400 font-bold mt-1' : 'text-slate-300';
+                    logLine.textContent = logs[index];
+                    container.appendChild(logLine);
+                    container.scrollTop = container.scrollHeight;
+                    index++;
+                } else {
+                    clearInterval(interval);
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-50');
+                }
+            }, 300);
+        }
+
+        // Interactive Modal Demos
+        function triggerTpiDemo() {
+            const output = document.getElementById('tpiOutput');
+            const badge = document.getElementById('cardStatusBadge');
+            const statusVal = document.getElementById('tpiStatus').value;
+            
+            output.classList.remove('hidden');
+            badge.textContent = statusVal;
+            if (statusVal === 'REJECTED') {
+                badge.className = 'px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 text-[10px]';
+            } else {
+                badge.className = 'px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]';
+            }
+        }
+
+        function triggerLeadDemo() {
+            const output = document.getElementById('leadOutput');
+            output.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
